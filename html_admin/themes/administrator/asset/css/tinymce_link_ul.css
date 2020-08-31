@@ -1,0 +1,30 @@
+* {
+padding: 0;
+margin: 0;
+background: none;
+list-style: none;
+font-family: Tinos, Arial, Helvetica, sans-serif;
+font-size: 14px;
+outline: none;
+border: none;
+text-decoration: none;
+color: #000;
+line-height: 18px;
+}
+li {
+background: #ededed;
+margin-bottom: 1px;
+}
+li a {
+font-size: 15px;
+padding: 9px 10px;
+display: inline-block;
+overflow: hidden;
+padding-right: 8px;
+text-overflow: ellipsis;
+vertical-align: top;
+white-space: nowrap;
+}
+a {
+color: #000;
+}

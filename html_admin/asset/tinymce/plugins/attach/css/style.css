@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+body.images {background: transparent !important;}
+.box-drop-drag {
+    background: url(../img/upload.png) center 80px no-repeat #e7e7e7;
+    padding: 264px 0 0;
+    text-align: center;
+    height: 172px;
+}
+#js_append_html {display: inline-block; width: 90%; margin: 5% !important; padding: 0 !important; list-style: none;}
+#js_append_html .working {text-align: center;}
+#js_append_html li {margin: 0 0 5px !important; padding: 0 !important;}
+#js_append_html li input.inp_working {outline: none !important; box-shadow: none !important; background: transparent !important;}
+#js_append_html li img {width: calc(33.33333% - 8px) !important; height: auto !important; border: 1px solid #bababa; margin: 8px 3px; opacity: 0.5;}
+#js_append_html li img.active {opacity: 1; border-color: green;}

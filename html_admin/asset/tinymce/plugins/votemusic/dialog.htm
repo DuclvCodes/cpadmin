@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Thăm dò ý kiến âm nhạc -  CMS</title>
+    
+    <link href="/asset/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/asset/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/asset/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/themes/giaoducthoidai/asset/css/style-metro.css" rel="stylesheet" type="text/css"/>
+    <link href="/themes/giaoducthoidai/asset/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/themes/giaoducthoidai/asset/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="/themes/giaoducthoidai/asset/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="/asset/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css?v=7" rel="stylesheet" type="text/css"/>
+    
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+    <script type="text/javascript" src="../../tiny_mce.js"></script>
+    <script type="text/javascript" src="../../utils/form_utils.js"></script>
+    <script type="text/javascript" src="../../utils/validate.js"></script>
+    <script type="text/javascript" src="../../utils/editable_selects.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/script.js?v=3"></script>
+    
+</head>
+<body>
+
+<form action="/api/vote" method="post" id="frm_vote">
+    <div class="control-group">
+        <div class="controls">
+            <textarea class="m-wrap required" name="title" placeholder="Đặt câu hỏi ..." style="height: 70px;"></textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <input type="hidden" name="is_predict" value="0" />
+            <label><input name="is_predict" value="1" type="checkbox" style="margin: 0 0 1px;" /> Dự đoán số người trả lời đúng</label>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <div class="row-fluid">
+                <div class="span5"><input name="answers[]" value="" class="m-wrap required" placeholder="Lựa chọn 1" /></div>
+                <div class="span7">
+                    <input name="youtube[]" value="" class="m-wrap required" placeholder="Youtube ..." />
+                    <a href="#" class="btn green mini btn_upload js">Tải lên</a>
+                </div>
+            </div>
+            <i class="icon-remove js_close hide"></i>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <div class="row-fluid">
+                <div class="span5"><input name="answers[]" value="" class="m-wrap required" placeholder="Lựa chọn 2" /></div>
+                <div class="span7">
+                    <input name="youtube[]" value="" class="m-wrap required" placeholder="Youtube ..." />
+                    <a href="#" class="btn green mini btn_upload js">Tải lên</a>
+                </div>
+            </div>
+            <i class="icon-remove js_close hide"></i>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="control-label">
+            <a class="add_choose" href="#"><i class="icon-plus"></i> Lựa chọn khác</a>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls" style="text-align: center; margin-top: 23px;">
+            <button type="submit" class="btn blue mini" ><i class="icon-ok"></i> <span id="lbl_submit">Chèn vào bài</span></button>
+            <button type="button" class="btn white mini" onclick="tinyMCEPopup.close();"> Hủy</button>
+        </div>
+    </div>
+    <input type="hidden" name="vote_id" value="0" />
+</form>
+<form id="frm_upload" action="api/uploadVote" method="post" class="hide" enctype="multipart/form-data">
+<input type="file" name="upl" accept="audio/*" />
+</form>
+    
+</body>
+</html>

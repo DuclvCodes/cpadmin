@@ -1,0 +1,204 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 5, 2018, 10:54:33 PM
+    Author     : congnb
+*/
+
+*{font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:25px;word-wrap:break-word !important; color:#111;}
+h2{font-size:18px !important; font-weight:bold !important; line-height:24px !important;margin:5px 0 !important;}
+p,ul,ol,dd,pre,hr {margin-bottom: 12px !important;}
+ul ul, ol ol, ul ol, ol ul {margin: 0px 0px 0px 20px !important;}
+table {margin: 0 auto; max-width:675px !important; border: 1px solid #bababa; border-collapse: collapse;}
+table td {border: 1px solid #bababa;}
+table[align=right] {margin-left: 8px;}
+table[align=left] {margin-right: 8px;}
+tr td {padding: 5px !important;}
+img {margin: auto !important;height: auto !important;max-width: 650px !important;border: none !important;display:block;}
+a{color:#0b6098 !important;}
+a:hover{color:#0062ab !important; text-decoration:underline;}
+
+._related_1404022217 {border-top: 3px solid #E0E0E0; margin-top: 12px; margin-bottom: 12px;}
+._related_1404022217_letter {font-weight: normal;border-top: 3px solid #c32c2c;display: inline-block;margin-top: -3px;line-height: 26px !important;font-family: Arial !important;font-size: 14px !important;margin-bottom: 3px;padding: 0;}
+._related_1404022217_title {text-decoration: none;font-family: Arial !important;font-size: 12px !important;line-height: 16px !important;margin: 8px 0 !important;display: block;font-weight: bold;color: #333 !important;}
+._related_1404022217_title:hover {text-decoration: underline;}
+._related_1404022217_photo {display: block;}
+._related_1404022217_photo img {max-width: 100% !important;}
+._related_1404022217_left {float: left; width: 140px; margin-right: 12px;}
+._related_1404022217_right {float: right; width: 140px; margin-left: 12px;}
+._related_1404022217_bottom {display: inline-block;width: 100%;}
+._related_1404022217_bottom ._related_1404022217_item {float: left;width: 22.5%;margin-right: 2%;overflow: hidden;border: none;padding: 0;}
+._related_1404022217_bottom ._related_1404022217_item_last {margin-right: 0 !important;}
+._related_1404022217_bottom ._related_1404022217_title {font-weight: normal !important; line-height: 18px;}
+
+.tpk_tinyslide {padding: 8px; background: #dff0d8; border: 1px solid #d6e9c6; margin: 0 0 8px;}
+.tpk_tinyslide .tpk_wrap {min-height: 100px; display: inline-block; width: 99%; padding: 0.5% 0.5% 0;}
+.tpk_tinyslide figure, .tpk_tinyslide .tpk_video {display: block; width: 100%; margin-bottom: 13px !important;}
+.tpk_tinyslide figure figcaption {display: block !important;}
+.tpk_tinyslide img {max-width: 100% !important; height: auto !important;}
+.tpk_quote {height: auto !important; max-width: 100% !important;}
+.quote-inner figcaption {display: none !important;}
+.quote-inner figure {width: 100%;}
+.quote-inner img {max-width: 100% !important; height: auto !important;}
+.tpk_live {border-left: 5px solid #ccc;padding: 1px 0 1px 10px;background: #f8f8f8; margin-bottom: 13px;}
+iframe[src*="/watch/"] {height: 350px !important;}
+
+figure {border: none !important; margin: 5px auto !important; padding: 0 !important; width: -webkit-min-content;width: -moz-min-content;width: min-content;}
+figcaption {background: rgba(189, 189, 189, 0.14) !important}
+figcaption h2 {font-size: 12px !important; color: #333; padding: 0 5px; margin: 0 !important;font-weight: normal !important; text-align: center;}
+figcaption h2 * {color: #333;}
+
+.tpk_attach {box-shadow: 1px 1px 3px rgba(0,0,0,0.5); background: url(/ucp/themes/images/attach-icon.jpg) no-repeat #eee; height: 64px; overflow: hidden; max-width: 250px; padding-left: 72px;}
+.tpk_attach h2 {margin: 8px 0 0 !important;}
+.tpk_attach h2 a {text-decoration: none;}
+.tpk_attach p {color: #999; margin: 0 !important;}
+
+.tpk_area_vote {padding: 8px 35px 8px 14px;margin-bottom: 20px;text-shadow: 0 1px 0 rgba(255,255,255,0.5);border: 1px solid #bce8f1;color: #3a87ad;background-color: #d9edf7;}
+.tpk_area_vote strong {color: #3a87ad;}
+
+.quote_center{width: 100%!important;float: left!important }
+.quote_center>div.tkpEdit{width: 200px; float: left}
+.quote_center>div.tkpEdit img{width: 100%;}
+
+.quote_center>blockquote.tkpEdit{float: none;margin-left: 215px!important;display: inherit;}
+
+
+body{width: 750px; margin:0 auto;}
+figure.left{
+    width: auto!important;
+    margin-left: -124px!important;
+    margin-right: 15px!important;
+    float: left;
+}
+ figure.right{
+    width: auto!important;
+    margin-right: -124px!important;
+    margin-left: 15px!important;
+    float: right;
+}
+
+ figure.center img{max-width: 988px}
+
+ figure.center{
+    width: auto;
+    float: left
+
+}
+ figure.none{display: inline-block}
+
+ figure.large{ width: 988px; margin-left: -124px!important;display: inline-block}
+ figure.large img{max-width: 988px!important}
+ figure.large figcaption{width: 988px!important}
+
+
+ figure.full{ width: 988px; margin-left: -124px!important;display: inline-block}
+ figure.full img{max-width: 988px!important}
+ figure.full figcaption{width: 988px!important}
+
+@media screen and (max-width: 460px){
+  body{width: 100%; float: left}
+  figure{width: 100%}
+  figure img{max-width: 100%!important}
+}
+
+.tpk_box_2_image {width: 988px; margin-left: -124px!important;display: inline-block}
+.tpk_box_2_image figure{max-width: 50%;width: 50%; float: left; padding:1px!important;-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;}
+.tpk_box_2_image figure img{max-width: 100%!important;width: 100%}
+
+.tpk_box_3_image {width: 988px; margin-left: -124px!important;display: inline-block}
+.tpk_box_3_image figure{max-width: 33.33333%;width: 33.3333%; float: left; padding:1px!important;-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;}
+.tpk_box_3_image figure img{max-width: 100%!important;width: 100%}
+
+
+
+/* For suggest */
+/*.suggest_post._related_1404022217 {border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 15px 0;}*/
+.suggest_post ._related_1404022217_letter {}
+.suggest_post .suggest_child {padding: 5px 0;padding-left: 22px;position: relative}
+.suggest_post .suggest_child a{
+    font-size: 12px;
+    line-height: 25px;
+    font-family: 'NotoSeifB'!important;
+    color: #545454!important;
+    text-decoration: none;
+    font-weight: 600;
+}
+.suggest_post .suggest_child:before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: 8px;
+    top: 17px;
+    background: #e10000;
+    font-size: 6px;
+}
+
+
+
+.comment {
+    text-align: center;
+    padding: 100px 0;
+    background: #111;
+    cursor: pointer;
+}
+.comment span {
+    color: #fff;
+    font-size: 50px;
+    font-family: robo-regular;
+}
+.comment span i {
+    font-size: 50px !important;
+}
+.container.check-author {
+    width: 680px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+.modal-body .binhluanj {
+    margin-top: 0;
+}
+.info-author-right.text-right {
+    text-align: right;
+}
+.author p {
+    font-size: 17px !important;
+    font-family: robo-medium !important;
+    margin-bottom: 0 !important;
+    margin-top: 0px !important;
+}
+.info-author-left {
+    position: relative;
+    padding-left: 20px;
+}
+.info-author-left:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #ff6b13;
+    left: 0;
+    top: 0;
+}
+.info-author-right.text-right p {
+    font-family: robo-regular !important;
+}
+mce-modal-block{
+    z-index: 65555;
+}
+.mce-window {
+        width: auto !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        background: none !important;
+        z-index: 65555;
+    }

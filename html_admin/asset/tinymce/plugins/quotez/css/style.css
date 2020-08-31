@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+
+#preview {border-width: 1px; border-style: solid; border-color: blue; padding: 8px; margin-top: 10px; background: #FFF; max-height: 230px; overflow: auto; text-align: justify;}
+#preview table p {font-family: Arial; font-size: 12px;}

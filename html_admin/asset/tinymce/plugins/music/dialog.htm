@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Audio Quick Insert -  CMS</title>
+    
+    <link href="/asset/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/asset/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/asset/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/themes/giaoducthoidai/asset/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="/themes/giaoducthoidai/asset/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="/themes/giaoducthoidai/asset/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="/themes/giaoducthoidai/asset/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="/asset/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css?v=7" rel="stylesheet" type="text/css"/>
+    
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+    <script type="text/javascript" src="../../tiny_mce.js"></script>
+    <script type="text/javascript" src="../../utils/form_utils.js"></script>
+    <script type="text/javascript" src="../../utils/validate.js"></script>
+    <script type="text/javascript" src="../../utils/editable_selects.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/jquery.knob.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="js/jquery.fileupload.js"></script>
+    <script src="/themes/phapluatplus/scripts/jquery.sortable.min.js"></script>
+    
+    <script type="text/javascript" src="js/script.js?v=1"></script>
+    
+</head>
+<body class="images">
+    <form id="upload" action="/api/uploadAudio" method="post" enctype="multipart/form-data" style="margin: 0;">
+        <div class="box-drop-drag" id="drop">
+            <button id="btn_upload" class="btn blue">Nhấp để thêm audio vào nội dung</button>
+            <input type="file" accept="audio/*" name="upl" value="" class="hide" id="inp_upload" />
+            <p style="color: #999; font-size: 16px; margin-top: 36px;">Định dạng: MP3</p>
+        </div>
+    </form>
+    <div class="list_uploading" style="display: none;">
+        <ul id="js_append_html"></ul>
+        <div style="text-align: center;"><a style="display: none;" id="btn_insert" href="#" title="" class="btn blue">Chèn vào bài</a></div>
+        <br />
+    </div>
+</body>

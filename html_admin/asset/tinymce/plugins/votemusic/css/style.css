@@ -1,0 +1,17 @@
+@charset "utf-8";
+html {background: #FFF !important;}
+body {font-size: 12px; font-family: Arial !important; background: #FFF !important;}
+form {padding: 8px;}
+textarea, input {border: 1px solid #ccc !important; box-shadow: none !important; outline: none !important; margin: 0; padding: 3px 5px; width: calc(100% - 12px); font-family: Arial !important; font-size: 12px !important;}
+
+input[name="youtube[]"] {width: 100%; box-sizing: border-box; padding-right: 23px; padding-left: 60px;}
+
+.control-group .controls {position: relative;}
+.control-group .controls .icon-remove {position: absolute; top: 8px; right: 8px;}
+.add_choose {font-size: 12px; text-decoration: none !important;}
+.add_choose .icon-plus {margin-right: 3px;}
+.add_choose:hover {text-decoration: none !important;}
+.control-group.error input, .control-group.error select, .control-group.error textarea {border-color: #ed4e2a !important;}
+
+#frm_vote .span7 {position: relative;}
+#frm_vote .span7 .btn_upload {position: absolute; top: 0; left: 0; line-height: 20px; height: 19px;}

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert Block News -  CMS</title>
+    <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="../../tiny_mce_popup.js"></script>    
+    <script type="text/javascript" src="../../tiny_mce.js"></script>    
+    <script type="text/javascript" src="../../utils/form_utils.js"></script>
+    <script type="text/javascript" src="../../utils/validate.js"></script>
+    <script type="text/javascript" src="../../utils/editable_selects.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>  
+    <script type="text/javascript" src="js/jquery-1.3.2.js"></script>       
+    <script type="text/javascript" src="js/Extend.js?v=2"></script>
+    <script type="text/javascript" src="js/load-relation-news.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <h2 style="font-weight: normal;font-size: 21px;color: #1990db; text-align: center;">Chọn bài viết theo tiêu đề hoặc ID bài viết </h2>        
+    <form style="float: left;" onsubmit="javascript:search(false); return false;" action="" method="post">
+        <input class="_text" type="text" placeholder="Tìm kiếm bài viết..." id="search_keyword" name="search_keyword" style="width: 150px;" />    
+        <input class="btn blue" type="button" value="Tìm kiếm" onclick="javascript:search();" />
+    </form>
+    <div style="float: right;">
+        <input class="btn blue" type="button" name="insert" value="Chèn vào bài" onclick="insertblock();" />
+    </div>
+    <form style="float: right; display: none;" onsubmit="javascript:setOneNews(); return false;" action="" method="post">
+        <input class="_text" type="text" placeholder="ID bài viết..." id="IDkeyword" name="IDkeyword" onclick="$(this).val('');" />   
+        <input class="btn blue" type="button" value="Add" onclick="javascript:setOneNews();" />
+    </form>       
+    <div style="clear: both;"></div>
+    
+    <div id="art-sugg"><ul id="art-sugg-content"></ul><button onclick="javascript:search(true); return false;" style="display: none;" id="btn_readmore" class="btn green">Xem tiếp</button></div>
+    
+    <form  action="/"> 
+        <div style="text-align: right;">
+            <label><input type="radio" name="type" value="_related_1404022217_left" /> Căn trái</label>
+            <label><input type="radio" name="type" value="_related_1404022217_bottom" checked="checked" /> Ngang</label>
+            <label><input type="radio" name="type" value="_related_1404022217_right" /> Căn phải</label>
+        </div>
+        <div id="preview" style="border-width: 1px; border-style: solid; border-color: blue; padding: 20px; margin-top: 10px;">            
+            <div class="_related_1404022217 _related_1404022217_bottom" >                                                
+                <div><strong class="_related_1404022217_letter">Tin nên đọc</strong></div>
+            </div>
+            <div class="n_hide" style="clear: both;"></div>
+        </div>         
+    </form>                
+</body>
